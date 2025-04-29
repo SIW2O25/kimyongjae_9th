@@ -33,6 +33,8 @@
                     Console.WriteLine($"공격력 | {playerStatus.attack}");
                     Console.WriteLine($"방어력 | {playerStatus.defensive}");
                     Console.WriteLine($"골드   | {playerStatus.gold}");
+
+                    Console.ReadLine();
                 }
                 else if (input == "2")
                 {
@@ -86,6 +88,7 @@
 
                 else if (input == "3")
                 {
+                    Console.Clear();
                     Console.WriteLine("\n[스파르타 상점]");
                     Console.WriteLine();
                     Console.WriteLine($"수련자 갑옷     | {playershop.noviceArmor} | 방어력 + {playershop.staNovice}  | 수련에 도움을 주는 갑옷입니다.");
@@ -94,6 +97,9 @@
                     Console.WriteLine($"낡은 검         | {playershop.oldSword} | 공격력 + {playershop.staOSword}  | 쉽게 볼 수 있는 낡은 검입니다.");
                     Console.WriteLine($"청동 도끼       | {playershop.bronzeAx} | 공격력 + {playershop.staBAex}  | 어디선가 사용됐던 것 같은 도끼입니다.");
                     Console.WriteLine($"스파르타의 창   | {playershop.spartaSpear} | 공격력 + {playershop.staSSpear}  | 스파르타의 전사들이 사용했다는 절설의 창입니다.");
+
+                    Console.ReadLine();
+
                 }
                 else
                 {
@@ -105,7 +111,7 @@
 
 
 
-        public class StatusInfo()
+        public class StatusInfo
         {
             public int level;
             public string job;
@@ -124,7 +130,7 @@
             }
         }
 
-        public class InventoryInfo()
+        public class InventoryInfo
         {
             //인벤토리
             public int armor;
@@ -159,7 +165,7 @@
             }
         }
 
-        public class ShopInfo()
+        public class ShopInfo
         {
             //상점
             public int noviceArmor;
